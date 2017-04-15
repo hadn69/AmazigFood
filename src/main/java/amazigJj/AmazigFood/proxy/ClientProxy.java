@@ -5,8 +5,12 @@ import amazigJj.AmazigFood.init.ModItems;
 public class ClientProxy implements CommonProxy {
 
 	@Override
-	public void init() {
+	public void preInit() {
 		ModItems.registerRenders();		
 	}
 
+	@Override
+	public void init() {
+		
+	}
 }
