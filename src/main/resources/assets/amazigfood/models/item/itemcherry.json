@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "amazigfood:item/cherry"
+        "layer0": "amazigfood:items/cherry"
     }
 }
