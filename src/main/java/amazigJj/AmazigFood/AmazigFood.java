@@ -1,7 +1,9 @@
 package amazigJj.AmazigFood;
 
+import amazigJj.AmazigFood.init.ModBlocks;
 import amazigJj.AmazigFood.init.ModItems;
 import amazigJj.AmazigFood.proxy.CommonProxy;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -30,6 +32,8 @@ public class AmazigFood {
 		
 		ModItems.init();
 		ModItems.register();
+		ModBlocks.init();
+		ModBlocks.register();
 	}
 	
 	@EventHandler
@@ -52,6 +56,29 @@ public class AmazigFood {
 		private String registryName;
 		
 		AmazigFoodItems(String unlocalizedName, String registryName) {
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
+		
+	
+		
+		public String getUnlocalizedName(){
+			return unlocalizedName;
+		}
+		
+		public String getRegistryName() {
+			return registryName;
+		}
+		
+		
+	}
+	public static enum AmazigFoodBlocks {
+		CherryLog("cherrylog","blocklogcherry");
+		
+		private String unlocalizedName;
+		private String registryName;
+		
+		AmazigFoodBlocks(String unlocalizedName, String registryName) {
 			this.unlocalizedName = unlocalizedName;
 			this.registryName = registryName;
 		}

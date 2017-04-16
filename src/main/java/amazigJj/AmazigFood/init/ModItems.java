@@ -1,6 +1,7 @@
 package amazigJj.AmazigFood.init;
 
 import amazigJj.AmazigFood.items.ItemCherry;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
