@@ -75,3 +75,13 @@ processResources {
         exclude 'mcmod.info'
     }
 }
+
+repositories {
+	maven {
+		url "http://mvn.rx14.co.uk/shadowfacts/"
+	}
+}
+
+dependencies {
+	compile group: "net.shadowfacts", name: "Forgelin", version: "LATEST_VERSION"
+}

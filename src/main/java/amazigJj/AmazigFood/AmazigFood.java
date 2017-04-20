@@ -73,12 +73,14 @@ public class AmazigFood {
 		
 	}
 	public static enum AmazigFoodBlocks {
-		CherryLog("cherrylog","blocklogcherry");
+		CherryLog("cherrylog","blocklogcherry"),
+		CherryLeaves("cherryLeaves","blockleavescherry"),
+		CherrySapling("cherrysapling","blocksaplingcherry");
 		
 		private String unlocalizedName;
 		private String registryName;
 		
-		AmazigFoodBlocks(String unlocalizedName, String registryName) {
+		AmazigFoodBlocks(String unlocalizedName, String registryName){
 			this.unlocalizedName = unlocalizedName;
 			this.registryName = registryName;
 		}

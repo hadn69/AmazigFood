@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "amazigfood:blocks/cherry_log",
+		"side": "amazigfood:blocks/cherry_log_bark"
+	}
+}

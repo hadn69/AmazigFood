@@ -1,36 +1,35 @@
 package amazigJj.AmazigFood.init;
 
-import amazigJj.AmazigFood.blocks.BlockLogCherry;
+import amazigJj.AmazigFood.blocks.*;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
 	
 	public static Block logCherry;
+	public static Block leavesCherry;
+	public static Block saplingCherry;
 	
 	public static void init(){
 		logCherry = new BlockLogCherry();
+		leavesCherry = new BlockLeavesCherry();
+		saplingCherry = new BlockSaplingCherry();
 	}
 	
 	public static void register(){
-		registerBlock(logCherry);
-	}
-	
-	public static void registerBlock(Block block){
 		GameRegistry.register(logCherry);
-		
-		ItemBlock item = new ItemBlock(block);
-		item.setRegistryName(block.getRegistryName());
-		GameRegistry.register(item);
+		GameRegistry.register(leavesCherry);
+		GameRegistry.register(saplingCherry);
 	}
 	
 	public static void registerRenders() {
 		registerRender(logCherry);
+		registerRender(leavesCherry);
+		registerRender(saplingCherry);
 	}
 	
 	private static void registerRender(Block block) {
