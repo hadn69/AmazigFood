@@ -19,7 +19,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @Mod.EventBusSubscriber
 public class AmazigFood {
 
-    public static final String MOD_ID = "cherry", MOD_NAME = "Cherry";
+    public static final String MOD_ID = "amazigfood", MOD_NAME = "Amazig Food";
     public static final String VERSION = "1.0.0", MC_VERSIONS = "[1.12,1.13)";
 
     public static final Item CHERRY = new ItemFood(1, 0.1f, false)
