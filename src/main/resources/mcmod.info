@@ -4,7 +4,7 @@
   "name": "AmazigFood",
   "description": "More Than A Food Mod!",
   "version": "${version}",
-  "mcversion": "$mcversion",
+  "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
   "authorList": ["AmazigJj"],
